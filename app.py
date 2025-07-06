@@ -421,7 +421,7 @@ DEFAULT_BGE_MODEL_NAME = "BAAI/bge-m3"
 
 # --- Model and File Paths ---
 # 直接使用相对路径，适用于Streamlit Cloud部署
-MODEL_PATH = 'results/feature_optimized_training_20250705_222545/best_model.pkl'
+MODEL_PATH = 'results/best_model.pkl'
 PIPELINE_PATH = 'processed_data/preprocess_pipeline.pkl'
 FEATURES_PATH = 'processed_data/final_features_list.txt'
 
