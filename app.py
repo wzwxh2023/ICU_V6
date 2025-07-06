@@ -418,12 +418,12 @@ DEFAULT_SILICONFLOW_API_URL = "https://api.siliconflow.cn/v1/embeddings"
 DEFAULT_SILICONFLOW_API_KEY = "YOUR_SILICONFLOW_API_KEY_HERE"
 DEFAULT_BGE_MODEL_NAME = "BAAI/bge-m3"
 
+
 # --- Model and File Paths ---
-# 获取项目根目录路径
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(PROJECT_ROOT, 'results', 'feature_optimized_training_20250705_222545', 'best_model.pkl')
-PIPELINE_PATH = os.path.join(PROJECT_ROOT, 'processed_data', 'preprocess_pipeline.pkl')
-FEATURES_PATH = os.path.join(PROJECT_ROOT, 'processed_data', 'final_features_list.txt')
+# 直接使用相对路径，适用于Streamlit Cloud部署
+MODEL_PATH = 'results/feature_optimized_training_20250705_222545/best_model.pkl'
+PIPELINE_PATH = 'processed_data/preprocess_pipeline.pkl'
+FEATURES_PATH = 'processed_data/final_features_list.txt'
 
 # 最佳模型信息（基于catboost_smotetomek_0.05模型）
 MODEL_INFO = {
